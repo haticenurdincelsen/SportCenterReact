@@ -1,0 +1,31 @@
+.review-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.review-content {
+    display: flex;
+    justify-content: center;
+}
+
+.review-1 {
+    margin: 0 10px; /* İstenilen boşluk miktarına göre ayarlayabilirsiniz */
+}
+
+.review-subtitle {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px; 
+}
+
+.review p {
+    margin: 0 100px; /* Yanlardan boşluk ayarı */
+    background-color: #355592;
+    padding: 10px;
+}
+.review img{
+    border-radius: 50%;
+}

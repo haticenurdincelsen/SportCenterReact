@@ -1,0 +1,71 @@
+/* Trainer List */
+.trainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.trainer-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Trainer kartları arasındaki boşluk */
+}
+
+/* Trainer Card */
+.trainer-card {
+    position: relative;
+    width: 200px;
+    height: 300px;
+    border: 2px solid orange;
+    border-radius: 10px;
+    overflow: hidden; /* İçerik taşmasını engelleme */
+    transition: transform 0.3s; /* Geçiş efekti */
+}
+
+.trainer-card:hover {
+    transform: scale(1.1); /* Kartı büyütme */
+}
+
+/* Trainer Image */
+.trainer-card img {
+    width: 100%;
+    height: auto; /* Resmin oranlarını koruma */
+    object-fit: cover; /* Resmi kart boyutuna uygun hale getirme */
+    border-radius: 10px 10px 0 0; /* Yuvarlak köşeleri sadece üst tarafta yapma */
+}
+
+/* Trainer Details */
+.trainer-card .details {
+    position: absolute;
+    bottom: -50px; /* İsmi kartın dışına almak için */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.8); /* Arkaplan rengi */
+    padding: 5px 10px; /* Kenar boşlukları */
+    border-radius: 5px;
+    opacity: 0; /* Başlangıçta görünmez */
+    transition: opacity 0.3s; /* Geçiş efekti */
+}
+
+.trainer-card:hover .details {
+    opacity: 1; /* Üzerine gelince görünür olacak */
+}
+
+/* Trainer Name */
+.trainer-card .name {
+    position: absolute;
+    bottom: 10px; /* İsim kartın altına yerleştirme */
+    left: 0;
+    right: 0;
+    text-align: center;
+    opacity: 0; /* Başlangıçta görünmez */
+    transition: opacity 0.3s; /* Geçiş efekti */
+}
+
+.trainer-card:hover .name {
+    opacity: 1; /* Üzerine gelince görünür olacak */
+}
+.trainer-info{
+    text-align: center;
+    justify-content: center;
+}

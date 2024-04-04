@@ -1,0 +1,63 @@
+.fixed-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.fixed-header.scrolled {
+    background-color: #355592;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; /* Logo ve ikonlar dikey hizalamak için */
+    padding: 10px 20px; /* Kenar boşlukları ayarla */
+}
+
+.menu-button {
+    display: none;
+}
+
+.hamburger-icon {
+    display: none;
+}
+
+.navbar-logo {
+    max-height: 50px; /* Logonun maksimum yüksekliğini ayarlayın */
+}
+
+.navbar-right {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 25px;
+}
+
+.navbar-link {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.navbar-link:hover {
+    background-color: orange; /* Linklerin üzerine gelindiğinde arka plan rengini turuncu yap */
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.navbar-button {
+    background-color: var(--button-color);
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px; /* Butonun boyutlarını ayarla */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease; /* Gölge efekti için geçiş ekle */
+}
+
+.navbar-button:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Butonun üzerine gelindiğinde gölge efekti ekle */
+}

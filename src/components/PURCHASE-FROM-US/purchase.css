@@ -1,0 +1,55 @@
+.purchase-cards {
+    display: flex;
+    justify-content: center; /* Kartları yatay olarak ortala */
+    gap: 15px;
+    padding-bottom: 35px;
+}
+
+.icons {
+    width: 12px; /* İkonların genişliğini küçült */
+    height: 12px; /* İkonların yüksekliğini küçült */
+}
+
+.card {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.numbers {
+    text-decoration: line-through;
+}
+
+.titles {
+    font-weight: bold;
+}
+
+.price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-top: 5px;
+}
+
+.discounted-price {
+    font-weight: bold;
+}
+
+.original-price {
+    text-decoration: line-through;
+}
+
+.add {
+    display: flex;
+    align-items: center; /* İkon ve butonları dikey olarak hizala */
+    gap: 10px;
+    margin-top: 10px; /* Araya boşluk ekleyerek diğer içerikten ayrıştır */
+}
+.img{
+   margin-top: 20px;
+}
